@@ -3,7 +3,7 @@
 {
   home.file = {
     ".config/redis/redis.conf" = {
-      source = ./redis/redis.conf;
+      source = ./redis.conf;
 
     };
   };
