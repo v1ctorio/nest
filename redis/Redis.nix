@@ -17,7 +17,7 @@
       };
 
       Service = {
-        Type = "oneshot";
+        Type = "simple";
         ExecStart = "redis-server .config/redis/redis.conf";
         SyslogIdentifier = "hackey";
         Restart = "always";
