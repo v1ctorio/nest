@@ -21,7 +21,7 @@
     ".config/redis/redis.conf" = {
       source = ./redis/redis.conf;
     };
-  }
+  };
 
 
   home.file = {
@@ -57,9 +57,9 @@
         WantedBy = [ "default.target" ];
       };
 
-    }
+    };
 
-  }
+  };
 
 
   programs.home-manager.enable = true;
