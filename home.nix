@@ -8,8 +8,8 @@
 
 
   home.packages = [
-    pkgs.helix //editor 
-    pkgs.bat //modern cat
+    pkgs.helix #editor 
+    pkgs.bat #modern cat
   ];
 
   home.stateVersion = "24.05";
