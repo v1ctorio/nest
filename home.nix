@@ -8,7 +8,7 @@
 
   home.packages = [
     pkgs.helix
-  ]
+  ];
 
   home.stateVersion = "24.05";
   home.sessionVariables = {
@@ -46,6 +46,7 @@
         Enviroment = {
           NODE_ENV = "production";
           NODE_OPTIONS = "--max-old-space-size=2048";
+          MK_CONFIG_DB_PASS_FILE="${home.homeDirectory}/.config/pass";
         };
         SyslogIdentifier = "hackey";
         Restart = "always";
