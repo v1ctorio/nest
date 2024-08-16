@@ -8,7 +8,8 @@
 
 
   home.packages = [
-    pkgs.helix
+    pkgs.helix //editor 
+    pkgs.bat //modern cat
   ];
 
   home.stateVersion = "24.05";
@@ -44,7 +45,7 @@
         Type = "simple";
         ExecStart = "pnpm start";
         WorkingDirectory = "/home/vic/Hackey/Sharkey";
-        Enviroment = [
+        Environment = [
           "NODE_ENV=production" 
           "NODE_OPTIONS=--max-old-space-size=2048" 
           "MK_CONFIG_DB_PASS_FILE=/home/vic/.config/pass"
