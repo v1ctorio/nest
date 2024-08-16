@@ -2,7 +2,8 @@
 {
 
   imports = [
-    ./redis/.nix
+    ./redis/Redis.nix
+    ./Hackey/Hackey.nix
   ];
 
 
