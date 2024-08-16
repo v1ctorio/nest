@@ -42,11 +42,11 @@
       Service = {
         Type = "simple";
         ExecStart = "pnpm start";
-        WorkingDirectory = "${home.homeDirectory}/Hackey/Sharkey";
+        WorkingDirectory = "/home/vic/Hackey/Sharkey";
         Enviroment = {
           NODE_ENV = "production";
           NODE_OPTIONS = "--max-old-space-size=2048";
-          MK_CONFIG_DB_PASS_FILE="${home.homeDirectory}/.config/pass";
+          MK_CONFIG_DB_PASS_FILE="/home/vic/.config/pass";
         };
         SyslogIdentifier = "hackey";
         Restart = "always";
