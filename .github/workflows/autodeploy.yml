@@ -1,0 +1,21 @@
+name: testing main branch
+
+on: [push]
+
+jobs:
+  
+
+  deploy-to-nest:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Connect to ssh, pull and home-manager switch
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd /home/vic/.config/home-manager
+            git pull
+            home-manager switch
