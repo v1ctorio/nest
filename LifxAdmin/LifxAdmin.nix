@@ -17,6 +17,11 @@
         Restart = "always";
         TimeoutSec = 0;
         WorkingDirectory = "/home/vic/prjcts/lifx-admin";
+        Environment = [
+          "NODE_ENV=production" 
+          "REDIS_PORT=44945" 
+          "LIFXA_REDIS_DB="
+        ];
       };
 
       Install = {

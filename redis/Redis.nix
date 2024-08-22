@@ -22,11 +22,7 @@
         SyslogIdentifier = "hackey";
         Restart = "always";
         TimeoutSec = 0;
-        Environment = [
-          "NODE_ENV=production" 
-          "REDIS_PORT=44945" 
-          "LIFXA_REDIS_DB="
-        ];
+
       };
       
 
