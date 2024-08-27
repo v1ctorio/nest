@@ -4,7 +4,7 @@
 
   systemd.user.services = {
 
-    LifxAdmin = {
+    OnlyOnce = {
       Unit = {
         Description = "Only Once slack";
         After = [ "network-online.target" ];
