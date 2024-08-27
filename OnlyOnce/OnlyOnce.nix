@@ -16,7 +16,7 @@
         SyslogIdentifier = "OOSlack";
         Restart = "always";
         TimeoutSec = 0;
-        WorkingDirectory = "/home/vic/prjcts/slack-only-once";
+        WorkingDirectory = "/home/vic/slack-only-once";
         Environment = [
           "NODE_ENV=production" 
         ];
