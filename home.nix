@@ -5,6 +5,7 @@
     ./redis/Redis.nix
     ./Hackey/Hackey.nix
     ./LifxAdmin/LifxAdmin.nix
+    ./OnlyOnce/OnlyOnce.nix
   ];
 
 
