@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   home.file = {
-    ".config/redis/redis.conf" = {
+    "/redis/redis.conf" = {
       source = ./redis.conf;
 
     };
@@ -18,7 +18,7 @@
 
       Service = {
         Type = "simple";
-        ExecStart = "redis-server .config/redis/redis.conf";
+        ExecStart = "redis-server /home/vic/redis/redis.conf";
         SyslogIdentifier = "hackey";
         Restart = "always";
         TimeoutSec = 0;
