@@ -32,6 +32,10 @@
       };
 
     };
-
   };
+
+  home.activation.reloadRedis = lib.mkAfter ''
+    systemctl --user daemon-reload
+    systemctl --user reload Redis.service
+  '';
 }
