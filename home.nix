@@ -6,6 +6,7 @@
     ./Hackey/Hackey.nix
     ./LifxAdmin/LifxAdmin.nix
     ./OnlyOnce/OnlyOnce.nix
+    ./Noco/NocoDB.nix
   ];
 
 

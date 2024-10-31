@@ -13,5 +13,5 @@ home-manager config for my Nest user.
 1. Free slot
 2. [LIFX Admin](./LifxAdmin/LifxAdmin.nix)
 3. [Hackey](https://hk.dino.icu/)
-4. Free slot
+4. NocoDB
 ```
