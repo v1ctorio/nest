@@ -33,6 +33,8 @@
 
 
 
-  programs.home-manager.enable = true;
-  home-manager.backupFileExtension = "bak";
+  programs.home-manager = {
+    enable = true;
+    backupFileExtension = "bak";
+  };
 } 
