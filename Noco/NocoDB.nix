@@ -11,13 +11,13 @@
 
       Service = {
         Type = "simple";
-        ExecStart = "pnpm start";
+        ExecStart = "./nocodb";
         WorkingDirectory = "/home/vic/Noco";
         Environment = [
           "PORT=43595" 
           "NC_REDIS_URL=redis://localhost:44945/4"
         ];
-        SyslogIdentifier = "hackey";
+        SyslogIdentifier = "nocodbs";
         Restart = "always";
         TimeoutSec = 60;
       };
