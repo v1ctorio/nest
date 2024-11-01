@@ -20,4 +20,4 @@ jobs:
             export PATH=/nix/var/nix/profiles/default/bin:$PATH
             cd /home/vic/.config/home-manager
             git pull
-            home-manager switch
+            home-manager switch -b backup
