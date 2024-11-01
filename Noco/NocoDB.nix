@@ -11,7 +11,7 @@
 
       Service = {
         Type = "simple";
-        ExecStart = "nocodb";
+        ExecStart = "/home/vic/Noco/nocodb";
         WorkingDirectory = "/home/vic/Noco";
         Environment = [
           "PORT=43595" 
